@@ -54,7 +54,7 @@ A detailed explanation of AI usage is provided in:
 
 ---
 
-## Live Demo (Optional)
+## Live Demo 
 
 If deployed using GitHub Pages, the website can be accessed at:
 
