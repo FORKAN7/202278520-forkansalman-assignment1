@@ -154,3 +154,21 @@ button:hover {
         align-items: center;
     }
 }
+
+.dark-mode {
+    background-color: #1E1E2F;
+    color: white;
+}
+
+.dark-mode header {
+    background-color: #2A2A40;
+}
+
+.dark-mode .project-card {
+    background-color: #2A2A40;
+}
+
+#greeting {
+    color: var(--primary);
+    font-weight: 600;
+}
