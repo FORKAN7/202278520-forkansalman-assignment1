@@ -31,6 +31,19 @@ header h1 {
     color: var(--primary);
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header-actions input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
 /* ===== Navigation ===== */
 nav a {
     margin-left: 20px;
@@ -42,6 +55,12 @@ nav a {
 
 nav a:hover {
     color: var(--primary);
+}
+
+.personal-message {
+    color: var(--primary);
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 /* ===== Sections ===== */
@@ -135,6 +154,18 @@ button:hover {
     opacity: 0.9;
 }
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.filter-btn.active {
+    box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.2);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
 
@@ -167,8 +198,72 @@ button:hover {
 .dark-mode .project-card {
     background-color: #2A2A40;
 }
+.dark-mode nav a {
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #2A2A40;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode .empty-message {
+    color: #ddd;
+}
 
 #greeting {
     color: var(--primary);
     font-weight: 600;
+}
+/* new interactive style assiment 2 */
+.empty-message {
+    text-align: center;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-message {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-message.error {
+    color: #d62828;
+}
+
+.form-message.success {
+    color: #2a9d8f;
+}
+
+/* animation */
+section {
+    padding: 60px 8%;
+    animation: fadeIn 0.6s ease;
+}
+
+button,
+nav a,
+.project-card,
+input,
+textarea {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
